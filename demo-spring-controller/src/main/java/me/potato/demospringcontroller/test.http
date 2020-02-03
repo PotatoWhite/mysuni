@@ -1,0 +1,15 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "userId":"testid01",
+    "email" :"test@test.com",
+    "bioInfo" : {
+        "birthdate" : "20000101",
+        "height" : 170
+    }
+}
+
+###
+GET http://localhost:8080/users/testid01
+Content-Type: application/json
